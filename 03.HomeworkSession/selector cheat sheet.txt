@@ -1,0 +1,279 @@
+Build a selector cheat sheet for the New Request wizard (all 5 steps):
+one CSS selector and the role + name for every input and button
+
+// Log In:
+
+[data-testid="cs-login-email"]
+[type="email"]
+
+[data-testid="cs-login-password"]
+[type="password"]
+
+[type="submit"]
+[data-testid="cs-login-submit"]
+
+-- Accessibility 
+Role: button 
+Name: "Login" 
+
+// Submit New Service Request
+
+//Request title
+
+[data-testid="cs-new-request-title"]
+[name="title"]
+-- Accessibility 
+Role: textbox 
+Name: "Request Title" 
+
+//Description
+
+[data-testid="cs-new-request-description"]
+[name="description"]
+
+-- Accessibility 
+Role: textbox 
+Name: "Description" 
+
+//Date of Request
+
+[data-testid="cs-new-request-date"]
+[dateOfRequest]
+
+-- Accessibility 
+Role: Date 
+Name: "Date of Request" 
+
+//Category
+
+[data-testid="cs-new-request-category"]
+[name="category"]
+
+-- Accessibility 
+Role: combobox 
+Name: "" 
+
+//Priority
+[data-testid="cs-new-request-priority"]
+
+-- Accessibility 
+Role: radiogroup 
+
+[name="priority"]
+[value="LOW"]
+-- Accessibility 
+Role: radio 
+Name: "Low" 
+
+[name="priority"]
+[value="MEDIUM"]
+
+-- Accessibility 
+Role: radio 
+Name: "Medium" 
+
+[name="priority"]
+[value="HIGH"]
+
+-- Accessibility 
+Role: radio 
+Name: "High" 
+
+[name="priority"]
+[value="URGENT"]
+
+-- Accessibility 
+Role: radio 
+Name: "Urgent" 
+
+//Is this an emergency 
+
+[data-testid="cs-new-request-emergency"]
+
+-- Accessibility 
+Role: checkbox 
+Name: "Is this an emergency Is this an emergency?" 
+
+// Cancel
+
+[data-testid="cs-new-request-wizard-cancel"]
+[type="button"]
+
+-- Accessibility 
+Role: Cancel 
+Name: button 
+
+//Back
+
+[data-testid="cs-new-request-wizard-back"]
+
+-- Accessibility 
+Role: Back 
+Name: button 
+
+//Next
+
+[data-testid="cs-new-request-wizard-next"]
+
+-- Accessibility 
+Role: Next 
+Name: button 
+
+//Street Address
+
+[data-testid="cs-new-request-street-address"]
+[name="streetAddress"]
+
+-- Accessibility 
+Role: textbox 
+Name: Street Address 
+
+// City
+
+[data-testid="cs-new-request-city"]
+[name="city"]
+
+-- Accessibility 
+Role: textbox 
+Name: City
+
+//Postal code
+[data-testid="cs-new-request-postal-code"]
+[name="postalCode"]
+
+-- Accessibility 
+Role: textbox 
+Name: Postal code
+
+// GPS Coordinates  
+
+[data-testid="cs-new-request-latitude"]
+
+-- Accessibility 
+Role: spinbutton 
+Name:  GPS Coordinates
+
+//Longitude
+[data-testid="cs-new-request-longitude"]
+[name="longitude"]
+
+-- Accessibility 
+Role: spinbutton 
+Name:  Longitude
+
+//Location Description 
+[data-testid="cs-new-request-location-text"]
+[name="locationText"]
+
+-- Accessibility 
+Role: textbox 
+Name:  Location Description
+
+//Use Current Location
+[data-testid="MyLocationIcon"]
+
+-- Accessibility 
+Role: button 
+Name:  "Use Current Location"
+
+//Get Address from Map  
+[data-testid="LocationOnIcon"]
+
+-- Accessibility 
+Role: button 
+Name:  "Get Address from Map"
+
+
+//Preferred Contact Method
+
+[data-testid="cs-new-request-contact-method"]
+[name="contactMethod"]
+[data-testid="ArrowDropDownIcon"]
+
+-- Accessibility 
+Role: combox 
+Name:  "Email"
+
+//Email
+[data-testid="cs-new-request-email"]
+[name="email"]
+
+-- Accessibility 
+Role: textbox 
+Name:  "Email"
+
+[Phone]
+
+[data-testid="cs-new-request-phone"]
+[name="phone"]
+
+-- Accessibility 
+Role: textbox 
+Name:  "Phone"
+
+//Mailiing Address (Optional)
+//Street Address
+
+[data-testid="cs-new-request-mail-address"]
+[name="mailingStreetAddress"]
+
+-- Accessibility 
+Role: textbox 
+Name:  "Street Address"
+
+//City
+
+[data-testid="cs-new-request-mail-city"]
+[name="mailingCity"]
+
+-- Accessibility 
+Role: textbox 
+Name:  "City"
+
+//Postal code
+
+[data-testid="cs-new-request-mail-postal"]
+[name="mailingPostalCode"]
+
+-- Accessibility 
+Role: textbox 
+Name:  "Postal Code"
+
+// Alternate Phone (Required for Emergency)
+
+[data-testid="cs-new-request-alternate-phone"]
+[name="alternatePhone"]
+
+-- Accessibility 
+Role: textbox 
+Name:  "Alternate Phone (Required for Emergency)"
+
+//Afected Services (Optional)
+
+[data-testid="cs-new-request-affected-services"]
+
+-- Accessibility 
+Role: textbox 
+Name:  "Select affected services"
+
+//Additional Details
+[data-testid="cs-new-request-image-upload"]
+
+-- Accessibility 
+Role: textbox 
+Name:  "Select affected services"
+
+// I agree to the terms and conditions 
+
+[data-testid="cs-new-request-agree-terms"]
+
+-- Accessibility 
+Role: checkbox 
+Name:  "Agree to terms and conditions I agree to the terms and conditions"
+
+// Submit Request
+
+[data-testid="cs-new-request-wizard-submit"]
+-- Accessibility 
+Role: button 
+Name:  "Submit Request"
